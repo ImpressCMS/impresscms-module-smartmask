@@ -1,0 +1,16 @@
+<{$cancel_masquerade_form.javascript}>
+<form name="<{$cancel_masquerade_form.name}>" action="<{$cancel_masquerade_form.action}>" method="<{$cancel_masquerade_form.method}>" <{$cancel_masquerade_form.extra}>>
+    <!-- start of form elements loop -->
+    <{foreach item=element from=$cancel_masquerade_form.elements}>
+      <{if $element.hidden != true}>
+        <div><b><{$element.caption}></b></div>
+        <{if $element.description}>
+        	<div><{$element.description}></div>
+        <{/if}>
+        <div><{$element.body}></div>
+      <{else}>
+	      <{$element.body}>
+      <{/if}>
+    <{/foreach}>
+    <!-- end of form elements loop -->
+</form>

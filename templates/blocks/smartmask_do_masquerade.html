@@ -1,0 +1,17 @@
+<{$do_masquerade_form.javascript}>
+<form name="<{$do_masquerade_form.name}>" action="<{$do_masquerade_form.action}>" method="<{$do_masquerade_form.method}>" <{$do_masquerade_form.extra}>>
+    <!-- start of do_masquerade_form elements loop -->
+    <{foreach item=element from=$do_masquerade_form.elements}>
+      <{if $element.hidden != true}>
+        <div><b><{$element.caption}></b></div>
+        <{if $element.description}>
+        	<div><{$element.description}></div>
+        <{/if}>
+        <div><{$element.body}></div>
+      <{else}>
+	      <{$element.body}>
+      <{/if}>
+    <{/foreach}>
+    <!-- end of do_masquerade_form elements loop -->
+</form>
+
