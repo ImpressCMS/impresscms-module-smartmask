@@ -1,10 +1,3 @@
-/**
-* $Id: readme.txt,v 1.1.2.1 2007/06/27 12:43:57 marcan Exp $
-* Module: SmartQuiz
-* Author: The SmartFactory <www.smartfactory.ca>
-* Licence: GNU
-*/
-
 What is SmartMask ?
 ======================
 
